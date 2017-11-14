@@ -1,8 +1,12 @@
 <% provide :title, t(".title") %>
-<h1><%= t ".sa" %></h1>
-<STRONG><p><%= t ".he" %></p></STRONG>
-<p>
-  <%= t ".stt3" %>
-  <a href="http://www.railstutorial.org/"><%= t ".stt2" %></a>
-  <%= t ".stt4" %>
-</p>
+<div>
+  <h1><%= t ".sa" %></h1>
+    <STRONG><p class="center"><%= t ".he" %></p></STRONG>
+  <h2>
+    <%= t ".stt3" %>
+    <a href="http://www.railstutorial.org/"><%= t ".stt2" %></a>
+    <%= t ".stt4" %>
+  </h2>
+  <%= link_to t(".signup"), signup_path, class: "btn btn-lg btn-primary" %>
+</div>
+<%= link_to image_tag("kitten.jpg", alt: "Rails logo") %>
