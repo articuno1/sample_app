@@ -8,3 +8,5 @@ size:
   gravatar: 80
 remember:
   ischeck: "1"
+image:
+  maximum_length: 50

@@ -6,8 +6,6 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       valid_user user
     else
-      flash.now[:danger] = t "flash.invalid"
-      render :new
       invalid_user
     end
   end
@@ -15,7 +13,7 @@ class SessionsController < ApplicationController
   def valid_user user
     log_in user
     params[:session][:remember_me] == Settings.remember.ischeck ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 
   def invalid_user
