@@ -43,6 +43,12 @@ en:
       home: "Home"
       help: "Help"
       login: "Login"
+      user: "Users"
+      account: "Account "
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      relogin: "Log in"
     footer:
       title: "Ruby on Rails Tutorial"
       name: "Michael Hartl"
@@ -64,6 +70,12 @@ en:
   shared:
     error_messages:
       stt: "The form contains "
+  sessions:
+    new:
+      title: "Log in"
+      new: "New user? "
+      stt: "Sign up now!"
   flash:
     success: "Welcome to the Sample App!"
     danger: "No find ID!!!"
+    invalid: "Invalid email/password combination"

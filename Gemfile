@@ -39,6 +39,7 @@ gem "jbuilder", "~> 2.5"
 group :test do
   gem "minitest-reporters"
   gem "rails-controller-testing"
+  gem "pry"
 end
 
 group :development, :test do
