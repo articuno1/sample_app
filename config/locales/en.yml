@@ -53,6 +53,17 @@ en:
       new: "News"
   users:
     new:
-      title: "Signup"
+      title: "Sign up"
       stt: "Find me in app/views/users/new.html.erb"
       stt1: "This will be a signup page for new users."
+      new: "New"
+      email: "Email"
+      password: "Password"
+      confirm: "Confirmation"
+      create: "Create my account"
+  shared:
+    error_messages:
+      stt: "The form contains "
+  flash:
+    success: "Welcome to the Sample App!"
+    danger: "No find ID!!!"
