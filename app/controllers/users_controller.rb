@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: %i(index edit update)
+  before_action :logged_in_user, except: %i(show new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
   before_action :find_user, only: %i(show edit update destroy)
@@ -8,7 +8,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.paginate page: params[:page], per_page: Settings.per_page
+    @microposts = @user.microposts.paginate page: params[:page],
+      per_page: Settings.page.per_page
   end
 
   def index
@@ -46,6 +47,20 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t "follow_user.following"
+    @user  = User.find(params[:id])
+    @users = @user.following.paginate page: params[:page]
+    render :show_follow
+  end
+
+  def followers
+    @title = t "follow_user.followers"
+    @user  = User.find(params[:id])
+    @users = @user.followers.paginate page: params[:page]
+    render :show_follow
+  end
+
   private
 
   def find_user
@@ -57,13 +72,6 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "flash.please"
-    redirect_to login_url
   end
 
   def correct_user

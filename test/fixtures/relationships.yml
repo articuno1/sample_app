@@ -1,0 +1,15 @@
+one:
+  follower: duy
+  followed: lana
+
+two:
+  follower: duy
+  followed: malory
+
+three:
+  follower: lana
+  followed: duy
+
+four:
+  follower: man
+  followed: duy

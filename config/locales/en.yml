@@ -10,6 +10,7 @@ en:
       stt3: "This is the home page for the"
       stt4: "sample application."
       signup: "Sign up now!"
+      feed: "Micropost Feed"
     about:
       title: "About"
       stt: " | Ruby on Rails Tutorial Sample App"
@@ -84,9 +85,25 @@ en:
       sure: "You sure?"
     show:
       micro: "Microposts %{count}"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view: "view my profile"
+      microposts: "Microposts:"
   shared:
     error_messages:
       stt: "The form contains "
+    stats:
+      following: "Following"
+      followers: "Followers"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
+    user_info:
+      view_pro5: "view my profile"
+      micropost: "micropost"
   sessions:
     new:
       title: "Log in"
@@ -100,6 +117,8 @@ en:
     updated: "Profile updated"
     please: "Please log in."
     delete: "User deleted"
+    deleted: "Micropost deleted"
+    deleted_error: "Deleted micropost was deleted"
     undelete: "User not deleted"
     info: "Please check your email to activate your account."
     acc_actived: "Account activated!"
@@ -111,6 +130,8 @@ en:
     email_not_found: "Email address not found"
     message1: "Password has been reset."
     expired: "Password reset has expired."
+    created: "Micropost created!"
+    find_error: "Not Found!"
   user_mailer:
     title: "Sample App"
     title1: "Password reset"
@@ -139,3 +160,12 @@ your password will stay as it is."
   microposts:
     micropost:
       posted: "Posted %{time} ago."
+      sure: "You sure?"
+      delete: "delete"
+    model:
+      error: "should be less than 5MB"
+  follow_user:
+    follow: "Follow"
+    unfollow: "Unfollow"
+    following: "Following"
+    followers: "Followers"
