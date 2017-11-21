@@ -6,3 +6,5 @@ email:
   maximum_length: 255
 size:
   gravatar: 80
+remember:
+  ischeck: "1"

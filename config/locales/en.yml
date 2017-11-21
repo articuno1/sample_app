@@ -75,6 +75,7 @@ en:
       title: "Log in"
       new: "New user? "
       stt: "Sign up now!"
+      stt1: "Remember me on this computer"
   flash:
     success: "Welcome to the Sample App!"
     danger: "No find ID!!!"
