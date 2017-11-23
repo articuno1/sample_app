@@ -67,6 +67,21 @@ en:
       password: "Password"
       confirm: "Confirmation"
       create: "Create my account"
+      save: "Save changes"
+    edit:
+      title: "Edit user"
+      infor: "Update your profile"
+      confirm: "Confirmation"
+      save: "Save changes"
+      change: "Change"
+    form:
+      confirm: "Confirmation"
+      create: "Create my account"
+    index:
+      title: "All Users"
+    user:
+      delete: "delete"
+      sure: "You sure?"
   shared:
     error_messages:
       stt: "The form contains "
@@ -80,3 +95,7 @@ en:
     success: "Welcome to the Sample App!"
     danger: "No find ID!!!"
     invalid: "Invalid email/password combination"
+    updated: "Profile updated"
+    please: "Please log in."
+    delete: "User deleted"
+    undelete: "User not deleted"
