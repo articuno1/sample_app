@@ -10,3 +10,6 @@ remember:
   ischeck: "1"
 image:
   maximum_length: 50
+time:
+  reset_expired: 2
+  reset_expired1: 3
