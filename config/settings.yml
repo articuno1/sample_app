@@ -13,3 +13,6 @@ image:
 time:
   reset_expired: 2
   reset_expired1: 3
+content:
+  maximum_length: 140
+per_page: 5

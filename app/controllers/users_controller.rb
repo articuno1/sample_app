@@ -7,10 +7,12 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate page: params[:page], per_page: Settings.per_page
+  end
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.paginate page: params[:page]
   end
 
   def create
@@ -27,7 +29,7 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
-    if @user.update_attributes(user_params)
+    if @user.update_attributes user_params
       flash[:success] = t "flash.updated"
       redirect_to @user
     else

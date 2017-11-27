@@ -82,6 +82,8 @@ en:
     user:
       delete: "delete"
       sure: "You sure?"
+    show:
+      micro: "Microposts %{count}"
   shared:
     error_messages:
       stt: "The form contains "
@@ -134,3 +136,6 @@ your password will stay as it is."
       title: "Reset password"
       confirm: "Confirmation"
       update: "Update password"
+  microposts:
+    micropost:
+      posted: "Posted %{time} ago."
